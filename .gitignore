@@ -24,4 +24,5 @@ dist-ssr
 *.sw?
 
 # assets
-src/assets/profile_pic.png
+src/assets/*_pic.png
+src/assets/*_pic.jpg
