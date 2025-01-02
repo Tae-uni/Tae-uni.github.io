@@ -1,5 +1,6 @@
-import logo from '../assets/twt.png';
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+
+import logo from '../assets/twt.png';
 
 const Navbar = () => {
   return (
