@@ -1,4 +1,4 @@
-import About from "./components/About";
+// import About from "./components/About";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -16,9 +16,9 @@ const App = () => {
         <section id="home">
           <Hero />
         </section>
-        <section id="about">
+        {/* <section id="about">
           <About />
-        </section>
+        </section> */}
         <section id="technologies">
           <Technologies />
         </section>

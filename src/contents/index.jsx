@@ -30,4 +30,5 @@ export const PROJECTS = [
 export const CONTACT = {
   email: "taekwon.kim.dev@gmail.com",
   address: "Andong, South Korea",
+  whatsapp: "+447308579623",
 }
