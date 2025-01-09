@@ -9,7 +9,17 @@ export default {
       fontFamily: {
         slab: ["Roboto Slab", "serif"],
         sans: ["Inter", "sans-serif"],
-      }
+      },
+      backdropBlur: {
+        sm: "4px",
+        DEFAULT: "8px",
+        lg: "12px",
+      },
+    },
+  },
+  variants: {
+    extend: {
+      backdropBlur: ["responsive"],
     },
   },
   plugins: [],

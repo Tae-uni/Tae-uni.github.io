@@ -26,7 +26,7 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-20 text-6xl font-sans tracking-tight lg:mt-16 lg:text-8xl"
+              className="pb-20 text-6xl font-sans tracking-tight lg:mt-16 lg:text-6xl"
             >
               Taekwon Kim
             </motion.h1>
