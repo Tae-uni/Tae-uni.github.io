@@ -3,8 +3,8 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const DesktopMenu = () => {
   return (
-    <div className="hidden md:flex items-center justify-between w-full">
-      <ul className="flex items-center gap-6 text-lg">
+    <div className="hidden md:flex items-center justify-between w-full mx-auto ml-64 lg:ml-96">
+      <ul className="flex items-center gap-8 text-lg">
         <li><Link to="home" smooth={true} duration={500} offset={-200} className="hover:text-gray-400">Home</Link></li>
         <li><Link to="projects" smooth={true} duration={500} offset={-100} className="hover:text-gray-400">Projects</Link></li>
         <li><Link to="contact" smooth={true} duration={500} offset={-200} className="hover:text-gray-400">Contact</Link></li>

@@ -16,14 +16,18 @@ export const PROJECTS = [
   {
     title: "PinPoint Meet You",
     image: pinpoint,
-    description: `PinPoint`,
-    technologies: ["React", "Express.js", "Node.js", "MongoDB"],
+    description: "A map-based meeting app to facilitate student gatherings.",
+    status: "🟢 Completed",
+    type: "👥 Team Project",
+    technologies: ["React", "Node.js", "MongoDB"],
   },
   {
     title: "SnapJournal",
     image: snap,
-    description: `Portfolio`,
-    technologies: ["Next.js", "Tailwind CSS", "Express.js", "Node.js", "MongoDB"],
+    description: "A journaling app with photo metadata analysis.",
+    status: "🔴 In Progress",
+    type: "👤 Personal Project",
+    technologies: ["Next.js", "Tailwind CSS", "Node.js", "MongoDB"],
   },
 ]
 

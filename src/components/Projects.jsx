@@ -25,18 +25,22 @@ const Projects = () => {
               <img src={project.image} className="mb-6 rounded" width={400} height={300} alt={project.title} />
             </motion.div>
             <motion.div
-              whileInView={{ opacity: 1, x:0 }}
+              whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6 className="mb-2 font-semibold">{project.title}</h6>
+              <h6 className="mt-4 mb-2 text-xl font-semibold">{project.title}</h6>
               <p className="mb-4 text-neutral-400">{project.description}</p>
-              {project.technologies.map((tech, index) => (
-                <span key={index} className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800">
-                  {tech}
-                </span>
-              ))}
+              <div className="mt-1 font-sans text-sm">{project.status}</div>
+              <div className="mt-1 mb-3 font-sans text-sm">{project.type}</div>
+              <div className="flex flex-wrap gap-1 gap-y-1 mt-3">
+                {project.technologies.map((tech, index) => (
+                  <span key={index} className="mr-2 rounded bg-neutral-900 px-1 py-1 text-sm font-medium text-purple-600">
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           </div>
         ))}
