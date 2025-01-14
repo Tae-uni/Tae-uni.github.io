@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import profilePic from "../assets/profile_pic.png";
 import { HERO_CONTENT } from "../contents";
 
-
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
   visible: {
@@ -57,7 +56,7 @@ const Hero = () => {
               className="object-cover mt-20 rounded-full"
               width={400}
               height={400}
-              src={profilePic} alt="Taekwon profile" 
+              src={profilePic} alt="Taekwon profile"
             />
           </div>
         </div>
