@@ -1,8 +1,20 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 import { PROJECTS } from "../contents";
+import ProjectModal from "./ProjectModal";
 
 const Projects = () => {
+  const [clickProject, setClickProject] = useState(null);
+
+  const handleProjectClick = (project) => {
+    setClickProject(project);
+  };
+
+  const closeModal = () => {
+    setClickProject(null);
+  }
+
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h2
@@ -15,7 +27,11 @@ const Projects = () => {
       </motion.h2>
       <div>
         {PROJECTS.map((project, index) => (
-          <div key={index} className="mb-8 flex flex-wrap lg:justify-center" >
+          <div
+            key={index}
+            className="mb-8 flex flex-wrap lg:justify-center cursor-pointer"
+            onClick={() => handleProjectClick(project)}
+          >
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
@@ -45,6 +61,15 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      
+      {/* Modal */}
+      {clickProject && (
+        <ProjectModal
+          project={clickProject}
+          openModal={Boolean(clickProject)}
+          closeModal={closeModal}
+        />
+      )}
     </div>
   );
 };
