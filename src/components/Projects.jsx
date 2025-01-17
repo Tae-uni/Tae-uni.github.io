@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 import { PROJECTS } from "../contents";
@@ -6,6 +6,18 @@ import ProjectModal from "./ProjectModal";
 
 const Projects = () => {
   const [clickProject, setClickProject] = useState(null);
+
+  useEffect(() => {
+    if (clickProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [clickProject]);
 
   const handleProjectClick = (project) => {
     setClickProject(project);
