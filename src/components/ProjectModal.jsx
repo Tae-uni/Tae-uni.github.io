@@ -42,7 +42,7 @@ const ProjectModal = ({ project, openModal, closeModal }) => {
 
         <div>
           <h3 className="mb-4 text-lg md:text-xl font-semibold">Technologies</h3>
-          <div className="flex flex-wrap mt-3 mb-4">
+          <div className="flex flex-wrap gap-y-1 mt-3 mb-4">
             {project.technologies.map((tech, index) => (
               <span key={index} className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-600">
                 {tech}
@@ -75,10 +75,11 @@ const ProjectModal = ({ project, openModal, closeModal }) => {
                     key={index}
                     src={image}
                     alt={project.title}
-                    className="w-1/3 rounded-lg shadow-lg object-cover"
+                    className="w-3/4 md:w-1/3 rounded-lg shadow-lg object-cover"
                   />
                 ))}
               </div>
+
               {/* Right Arrow Button */}
               <button
                 onClick={() => {

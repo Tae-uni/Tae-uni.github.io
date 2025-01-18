@@ -48,17 +48,18 @@ const Projects = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
-              className="w-full lg:w-1/4 mr-10"
+              className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 mr-10 flex-shrink-0"
             >
-              <img src={project.image} className="mb-6 rounded" width={400} height={300} alt={project.title} />
+              <img src={project.image} className="mb-6 rounded object-cover" alt={project.title} />
             </motion.div>
+
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1 }}
-              className="w-full max-w-xl lg:w-3/4"
+              className="w-full max-w-xl md:max-w-2/3 lg:max-w-lg items-center"
             >
-              <h6 className="mt-4 mb-2 text-xl font-semibold">{project.title}</h6>
+              <h6 className="mt-2 lg:mt-3 2xl:mt-6 mb-2 text-xl font-semibold">{project.title}</h6>
               <p className="mb-4 text-neutral-400">{project.description}</p>
               <div className="mt-1 font-sans text-sm">{project.status}</div>
               <div className="mt-1 mb-3 font-sans text-sm">{project.type}</div>
