@@ -7,6 +7,7 @@ const DesktopMenu = () => {
 
       <ul className="flex items-center gap-10 text-lg">
         <li><Link to="home" smooth={true} duration={500} offset={-200} className="hover:text-gray-400">Home</Link></li>
+        <li><Link to="about" smooth={true} duration={500} offset={-200} className="hover:text-gray-400">About Me</Link></li>
         <li><Link to="projects" smooth={true} duration={500} offset={-100} className="hover:text-gray-400">Projects</Link></li>
         <li><Link to="contact" smooth={true} duration={500} offset={-200} className="hover:text-gray-400">Contact</Link></li>
       </ul>

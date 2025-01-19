@@ -81,6 +81,18 @@ const MobileMenu = () => {
                 </li>
                 <li>
                   <Link
+                    to="about"
+                    smooth={true}
+                    duration={500}
+                    offset={-200}
+                    className="hover:text-gray-400"
+                    onClick={toggleMenu}
+                  >
+                    About Me
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to="technologies"
                     smooth={true}
                     duration={500}

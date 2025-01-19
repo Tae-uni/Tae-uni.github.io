@@ -28,8 +28,8 @@ const Hero = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
               className="object-cover mt-10 rounded-full"
-              width={200}
-              height={200}
+              width={180}
+              height={180}
               src={profilePic} alt="Taekwon profile"
             />
           </div>
