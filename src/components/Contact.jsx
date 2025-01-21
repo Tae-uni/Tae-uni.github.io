@@ -9,7 +9,7 @@ const Contact = () => {
   const emailDomain = "gmail.com";
 
   return (
-    <div className="border-b border-neutral-900 pb-40">
+    <div className="border-b border-neutral-900 pt-28 pb-44">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
