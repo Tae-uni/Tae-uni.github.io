@@ -1,6 +1,5 @@
 ## Continuous Integration(CI) & Continuous Deployment(CD)
 
-
 ### What is CI?
 Continuous integration (CI) is a software practice that requires frequently committing code to a shared repository. Committing code more often detects errors sooner and reduces the amount of code a developer needs to debug when finding the source of an error.
 
