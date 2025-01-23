@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import profilePic from "../assets/profile_pics.png";
 import { MdFileDownload, MdMail } from "react-icons/md";
 import { Link } from "react-scroll";
-// import { HERO_CONTENT } from "../contents";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -82,7 +81,8 @@ const Hero = () => {
                 </motion.button>
               </Link>
               <motion.a
-                href="../../public/Taekwon_Kim_Resume.pdf"
+                // Ensure the file path is an absolute path for consistent access.
+                href="/Taekwon_Kim_Resume.pdf"
                 download="Taekwon_Kim_Resume"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -91,16 +91,7 @@ const Hero = () => {
                 <MdFileDownload className="inline-block mr-2 text-lg" />
                 Resume
               </motion.a>
-
             </motion.div>
-            {/* <motion.p
-              variants={container(1)}
-              initial="hidden"
-              animate="visible"
-              className="my-2 max-w-2xl py-6 text-lg font-slab leading-relaxed"
-            >
-              {HERO_CONTENT}
-            </motion.p> */}
           </div>
         </div>
       </div>
