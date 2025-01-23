@@ -41,4 +41,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           disable_nojekyll: true
+          keep_files: true
           exclude_assets: ''
