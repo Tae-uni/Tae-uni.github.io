@@ -26,14 +26,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Change to project directory
-        run: cd Portfolio/portfolio
-
       - name: Build project
         run: npm run build
 
       - name: List files in working directory
         run: ls -la
+
+      - name: List files in dist directory
+        run: ls -la ./dist
 
       - name: Deploy and GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
