@@ -1,8 +1,23 @@
-# React + Vite
+# My Portfolio Website
+A personal portfolio website showing my skills, projects, and achievements.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 💫 Demo
+Check out my portfolio here: [Visit Website](https://tae-uni.github.io/)
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **About Me**: My journey as a developer.
+- **Tech Stack**: Overview of my technical skills.
+- **Projects**: Showcasing my completed and ongoing projects.
+- **Continuous Deployment**: Automated build and deployment using GitHub Actions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔄 Continuous Deployment
+This project is integrated with GitHub Actions to enable a CI/CD pipeline. Every push to the `main` brunch triggers the following automated steps:
+1. Build: The project is built using `npm run build`.
+2. Deploy: The built files are automatically deployed to GitHub Pages.
+
+View the workflow file [here](.github/workflows/deploy.yml)
+
+## 🛠️ Stack in this project
+- **Frontend**: React, Tailwind CSS
+- **Build Tool**: Vite
+- **Deployment**: GitHub Pages
